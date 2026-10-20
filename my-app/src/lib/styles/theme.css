@@ -1,0 +1,327 @@
+:root {
+	color-scheme: light;
+	--bs-primary: #3456c8;
+	--bs-primary-rgb: 52, 86, 200;
+	--bs-primary-text-emphasis: #263f98;
+	--bs-primary-bg-subtle: #edf1ff;
+	--bs-primary-border-subtle: #d6dfff;
+	--bs-body-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--bs-body-color: #20293a;
+	--bs-body-bg: #f5f7fb;
+	--bs-secondary-color: #687386;
+	--bs-border-color: #e4e8f0;
+	--bs-border-radius: .75rem;
+	--bs-border-radius-lg: 1rem;
+	--bs-border-radius-xl: 1.25rem;
+	--bs-box-shadow-sm: 0 .25rem .9rem rgba(28, 43, 76, .055);
+	--bs-box-shadow: 0 .7rem 2rem rgba(28, 43, 76, .09);
+	--bs-focus-ring-color: rgba(52, 86, 200, .2);
+}
+
+html {
+	min-width: 320px;
+	background: var(--bs-body-bg);
+}
+
+body {
+	min-height: 100vh;
+	font-family: var(--bs-body-font-family);
+	font-size: .94rem;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+.portal-shell {
+	background:
+		radial-gradient(ellipse at 85% 0%, rgba(52, 86, 200, .045), transparent 28rem),
+		var(--bs-body-bg) !important;
+}
+
+.portal-content {
+	width: 100%;
+}
+
+.portal-header {
+	box-shadow: 0 .2rem .9rem rgba(28, 43, 76, .045);
+}
+
+.portal-brand-mark {
+	width: 3rem;
+	height: 3rem;
+}
+
+.portal-avatar {
+	width: 2.25rem;
+	height: 2.25rem;
+}
+
+.portal-account-button {
+	background: #fff;
+}
+
+.portal-account-button:hover {
+	background: #f8f9fc;
+	border-color: #cdd5e3 !important;
+}
+
+.portal-navbar {
+	position: relative;
+	z-index: 2;
+}
+
+.portal-home-link {
+	width: 2.55rem;
+	height: 2.55rem;
+	text-decoration: none;
+}
+
+.portal-navbar .navbar-toggler {
+	border-color: var(--bs-border-color);
+	border-radius: .65rem;
+}
+
+.portal-navbar .navbar-nav .dropdown > .btn {
+	min-height: 2.55rem;
+	background: #fff;
+	border-color: #e2e6ef;
+}
+
+.portal-navbar .navbar-nav .dropdown > .btn:hover,
+.portal-navbar .navbar-nav .dropdown > .btn.show {
+	background: #f7f8fc;
+	border-color: #cfd7e8;
+}
+
+.portal-navbar .navbar-nav .dropdown > .btn.border-primary {
+	background: var(--bs-primary-bg-subtle);
+}
+
+.portal-footer {
+	box-shadow: 0 -.15rem .75rem rgba(28, 43, 76, .025);
+}
+
+.login-page {
+	background:
+		radial-gradient(ellipse at 15% 20%, rgba(52, 86, 200, .075), transparent 32rem),
+		var(--bs-body-bg);
+}
+
+.login-card {
+	border: 1px solid rgba(222, 228, 239, .8);
+	box-shadow: 0 1.2rem 3.5rem rgba(28, 43, 76, .13) !important;
+}
+
+.login-brand-panel {
+	background: linear-gradient(145deg, #edf1ff 0%, #f6f8ff 58%, #e7edff 100%);
+}
+
+.login-form-panel {
+	background: #fff;
+}
+
+.stat-card {
+	border: 1px solid #e9edf4;
+}
+
+.stat-card:hover {
+	border-color: #d9e0ef;
+	box-shadow: 0 .65rem 1.5rem rgba(28, 43, 76, .085);
+}
+
+.stat-card-icon {
+	width: 3.35rem;
+	height: 3.35rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stat-card-value {
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -.035em;
+}
+
+.container-fluid.px-3.px-lg-4 {
+	--bs-gutter-x: 1.5rem;
+	max-width: 1720px;
+}
+
+.card {
+	--bs-card-border-color: var(--bs-border-color);
+	--bs-card-border-radius: var(--bs-border-radius-lg);
+	--bs-card-cap-bg: #fff;
+	background-color: #fff;
+	box-shadow: var(--bs-box-shadow-sm);
+	transition: box-shadow .18s ease, border-color .18s ease;
+}
+
+.card-header,
+.card-footer {
+	padding: 1rem 1.25rem;
+	border-color: var(--bs-border-color);
+}
+
+.card-body {
+	padding: 1.25rem;
+}
+
+.card-footer {
+	border-radius: 0 0 var(--bs-card-border-radius) var(--bs-card-border-radius) !important;
+}
+
+.btn {
+	--bs-btn-font-weight: 600;
+	--bs-btn-border-radius: .65rem;
+	transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.btn-primary {
+	--bs-btn-bg: var(--bs-primary);
+	--bs-btn-border-color: var(--bs-primary);
+	--bs-btn-hover-bg: #2949b3;
+	--bs-btn-hover-border-color: #2949b3;
+	--bs-btn-active-bg: #223f9e;
+	--bs-btn-active-border-color: #223f9e;
+	--bs-btn-disabled-bg: var(--bs-primary);
+	--bs-btn-disabled-border-color: var(--bs-primary);
+	box-shadow: 0 .25rem .65rem rgba(52, 86, 200, .18);
+}
+
+.btn-primary:hover:not(:disabled) {
+	transform: translateY(-1px);
+	box-shadow: 0 .4rem .9rem rgba(52, 86, 200, .24);
+}
+
+.form-label {
+	margin-bottom: .4rem;
+	color: #3d485d;
+	font-size: .88rem;
+	font-weight: 600;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+	min-height: 2.65rem;
+	border-color: #dce2ec;
+	border-radius: .65rem;
+}
+
+.form-control,
+.form-select {
+	background-color: #fff;
+}
+
+.form-control::placeholder {
+	color: #98a1b1;
+}
+
+.form-control:focus,
+.form-select:focus {
+	border-color: #8299eb;
+	box-shadow: 0 0 0 .22rem rgba(52, 86, 200, .13);
+}
+
+.input-group > .form-control,
+.input-group > .form-select,
+.input-group > .input-group-text,
+.input-group > .btn {
+	border-radius: .65rem;
+}
+
+.table {
+	--bs-table-color: #354055;
+	--bs-table-hover-bg: #f6f8fc;
+	--bs-table-border-color: #edf0f5;
+	vertical-align: middle;
+}
+
+.table > thead > tr > th {
+	padding: .85rem .8rem;
+	background: #f7f8fb;
+	color: #69758a;
+	font-size: .76rem;
+	font-weight: 700;
+	letter-spacing: .035em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.table > tbody > tr > td {
+	padding: .8rem;
+}
+
+.table-responsive {
+	border-radius: .5rem;
+}
+
+.modal-backdrop.show {
+	backdrop-filter: blur(2px);
+}
+
+.modal-content {
+	border-radius: 1rem;
+	box-shadow: 0 1.25rem 4rem rgba(20, 32, 56, .22) !important;
+}
+
+.modal-header,
+.modal-footer {
+	padding: 1rem 1.25rem;
+	border-color: var(--bs-border-color);
+}
+
+.alert {
+	border-radius: .75rem;
+}
+
+.dropdown-menu {
+	--bs-dropdown-border-color: var(--bs-border-color);
+	--bs-dropdown-border-radius: .8rem;
+	--bs-dropdown-link-active-bg: var(--bs-primary);
+	padding: .5rem;
+}
+
+.dropdown-item {
+	border-radius: .45rem;
+}
+
+.page-heading-title {
+	letter-spacing: -.035em;
+}
+
+@media (max-width: 575.98px) {
+	body {
+		font-size: .91rem;
+	}
+
+	.container-fluid.px-3.px-lg-4 {
+		--bs-gutter-x: 1rem;
+	}
+
+	.card-body {
+		padding: 1rem;
+	}
+
+	.card-header,
+	.card-footer {
+		padding: .85rem 1rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: .01ms !important;
+		animation-duration: .01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
